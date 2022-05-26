@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/CryptoResorts/static/css/main.4edf72cc.css",
+    "main.js": "/CryptoResorts/static/js/main.a7e0d1e1.js",
+    "static/js/787.3c7ad834.chunk.js": "/CryptoResorts/static/js/787.3c7ad834.chunk.js",
+    "static/media/resort.png": "/CryptoResorts/static/media/resort.eb0f18bb638e61eb08c3.png",
+    "static/media/ellipse.png": "/CryptoResorts/static/media/ellipse.a3394df38f570a23a620.png",
+    "static/media/wallet.svg": "/CryptoResorts/static/media/wallet.b1522bd6459fac4ce2ceba01adc8bee4.svg",
+    "index.html": "/CryptoResorts/index.html",
+    "main.4edf72cc.css.map": "/CryptoResorts/static/css/main.4edf72cc.css.map",
+    "main.a7e0d1e1.js.map": "/CryptoResorts/static/js/main.a7e0d1e1.js.map",
+    "787.3c7ad834.chunk.js.map": "/CryptoResorts/static/js/787.3c7ad834.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4edf72cc.css",
+    "static/js/main.a7e0d1e1.js"
+  ]
+}
