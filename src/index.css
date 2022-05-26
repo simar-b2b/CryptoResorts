@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1c1c1c;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animated {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.snow-animation {
+  position: relative;
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes snowflakes-shake {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes snowflakes-shake {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.snowflake {
+  position: absolute;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+ animation-timing-function: linear, ease-in-out;
+animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  -webkit-animation-delay: 6s, 0.5s;
+  animation-delay: 6s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  -webkit-animation-delay: 8s, 3s;
+  animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s, 1s;
+  animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  -webkit-animation-delay: 3s, 1.5s;
+  animation-delay: 3s, 1.5s;
+}
+
+@media only screen and (min-width: 1199px)
+{
+.bg-blur-ss {
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(9px);
+  border: 1px solid white;
+  border-radius: 0 0 30px 30px;
+  border-top: none;
+}
+}
+
+/* Solar System Styles */
+.system {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  padding-top: 100%;
+  margin: auto;
+}
+@media (min-width: 700px) {
+  .system {
+    padding-top: 700px;
+  }
+}
+.system__sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.system__orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #B6853F;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  animation: spin infinite linear both;
+}
+.system__orbit:nth-child(1) {
+  width: calc(25%);
+  height: calc(25%);
+}
+.system__orbit:nth-child(2) {
+  width: calc(40%);
+  height: calc(40%);
+}
+.system__orbit:nth-child(3) {
+  width: calc(70%);
+  height: calc(70%);
+}
+.system__orbit:nth-child(4) {
+  width: calc(100%);
+  height: calc(100%);
+}
+/* .system__orbit:nth-child(5) {
+  width: calc(50%);
+  height: calc(50%);
+}
+.system__orbit:nth-child(6) {
+  width: calc(60%);
+  height: calc(60%);
+}
+.system__orbit:nth-child(7) {
+  width: calc(70%);
+  height: calc(70%);
+}
+.system__orbit:nth-child(8) {
+  width: calc(80%);
+  height: calc(80%);
+}
+.system__orbit:nth-child(9) {
+  width: calc(90%);
+  height: calc(90%);
+}
+.system__orbit:nth-child(10) {
+  width: calc(100%);
+  height: calc(100%);
+} */
+.system__orbit--sun {
+  border: none;
+}
+.system__orbit--earth {
+  animation-duration: 4.1s;
+}
+.system__orbit--saturn {
+  animation-duration: 20.8s;
+}
+.system__orbit--pluto {
+  animation-duration: 120.3s;
+}
+.system__planet {
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  transform: translateY(-50%);
+}
+.system__icon {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+.ecosystem-img {
+  animation: glowing 5000ms infinite;
+  border-radius: 100%;
+}
+
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 20px #fcfcfc; }
+  40% { box-shadow: 0 0 100px #ffffff; }
+  60% { box-shadow: 0 0 100px #ffffff; }
+  100% { box-shadow: 0 0 20px #fdfcf7; }
+}
+
+.wallet img {
+  margin-top: -10px;
+}
+
+.bg-warning, .btn-warning{
+background-color: #F19B2B !important;
+}
+.text-warning{
+  color: #F19B2B !important;
+}
+
+.border-warning{
+  border-color: #F19B2B !important;
+  border-left: var(--bs-border-width) var(--bs-border-style) #F19B2B!important;
+}
